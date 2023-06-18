@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1920px;
+    
+}
+#main {
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 50%, 0%, 0.733)), url("../img/index2mainbackgrround.png");
+    width: 1920px;
+    height: 1080px;
+}
+#sub2 {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    position: relative;
+}
+#sub {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    position: relative;
+}
+#sub::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background.png");
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+  /* 추가 배경 이미지 설정 */
+#sub::before:nth-child(1) {
+    background-image: url("../img/Bill.png");
+}
+#sub::before:nth-child(2) {
+    background-image: url("../img/coach.png");
+}
+
+#sub::before:nth-child(3) {
+    background-image: url("../img/framcis.png");
+}
+#sub::before:nth-child(4) {
+    background-image: url("../img/Nick.png");
+}
+#sub::before:nth-child(5) {
+    background-image: url("../img/joy.png");
+}
+#sub::before:nth-child(6) {
+    background-image: url("../img/Ellis.png");
+}
+#sub::before:nth-child(7) {
+    background-image: url("../img/Louis.png");
+}
+#sub::before:nth-child(8) {
+    background-image: url("../img/Rochelle.png");
+}
+
+
+#play{
+    background-color: black;
+    width: 1920px;
+    height: 1080px;
+}
+#Play{
+    position: absolute;
+    margin-left: 1250px;
+    margin-top: 380px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Century Gothic";
+    -webkit-transform: rotate(-7deg);
+    font-weight: lighter;
+}
+#Play:hover{
+border-color: gray;
+}
+#Survivor{
+    position: absolute;
+    margin-left: 1180px;
+    margin-top: 480px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Century Gothic";
+    -webkit-transform: rotate(-5deg);
+    font-weight: lighter;
+}
+#Survivor2{
+    width: 500px;
+    height: 100px;
+    margin-left: 1280px;
+    padding-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    font-family: "Zombie-Noize";
+    font-weight: lighter;
+}
+#Achievement{
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 580px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Century Gothic";
+    -webkit-transform: rotate(-5deg);
+    font-weight: lighter;
+}
+#CreativeYard{
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 680px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: "Century Gothic";
+    -webkit-transform: rotate(-5deg);
+    font-weight: lighter;
+}
+#How{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 230px;
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    font-family: "Zombie-Noize";
+}
+#playtext{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 350px;
+    color: rgb(255, 255, 255);
+    font-size: 150px;
+    font-family: "Zombie-Noize";
+    font-weight: normal;
+}
+#english{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 200px;
+    width: 500px;
+    color: white;
+    font-family: "Zombie-Noize";
+    text-align: left;
+    font-size: 25px;
+}
+.slide-container {
+    position: relative;
+    width: 950px;
+    height: 515px;
+    overflow: hidden;
+    margin-left: 800px;
+    top: 200px;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+
+.slide-video {
+    position: absolute;
+    display: flex;
+    width: 950px;
+    height: 515px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide-video iframe {
+    position: absolute;
+    width: 950px;
+    height: 515px;
+    opacity: 0.6;
+  }
+  
+  .slide-video iframe:nth-child(2) {
+    opacity: 1;
+}
+.arrow-container {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1020px;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid rgb(255, 255, 255);
+    animation: moveLeftArrow 1s infinite alternate;
+    
+  }
+  
+  .right-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(255, 255, 255);
+    animation: moveRightArrow 1s infinite alternate;
+  }
+  
+  @keyframes moveLeftArrow {
+    0% {
+    transform: translateX(-50px);
+    }
+    100% {
+    transform: translateX(-100px);
+    }
+  }
+  
+  @keyframes moveRightArrow {
+    0% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(600px);
+    }
+}
+#one {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 추가 */
+}
+
+#bill1, #Coth {
+    
+    margin-left: 1200px;
+    max-width: 50%;
+    max-height: auto;
+    opacity: 0.5;
+}
+
+#bill1 {
+    margin-right: -40px; /* 간격 조절 */
+}
+#bill1:hover{
+    opacity: 1;
+}
+#Coth {
+    margin-left: -30px; /* 간격 조절 */
+}
+#Coth:hover{
+    opacity: 1;
+}
+#fa, #nick {
+    
+    margin-left: 1199px;
+    max-width: 50%;
+    max-height: auto;
+    opacity: 0.5;
+}
+#fa{
+    
+    
+    opacity: 0.5;
+}
+#fa:hover{
+    opacity: 1;
+}
+#nick {
+    margin-left: -75px; /* 간격 조절 */
+}
+#nick:hover{
+    opacity: 1;
+}
+#three{
+    display: flex;
+}
+#joy1{
+    max-height: auto;
+    margin-left: 1200px;
+    opacity: 0.5;
+    margin-top: -5px;
+}
+#joy1:hover{
+opacity: 1;
+}
+#elish{
+    margin-top: -5px;
+    margin-left: -68px; /* 간격 조절 */
+    opacity: 0.5;
+}
+#elish:hover{
+    opacity: 1;
+}
+
+#Locis{
+    margin-left: 1200px;
+    opacity: 0.5;
+}
+#Locis:hover{
+    opacity: 1;
+}
+#ro{
+    margin-left: -74px;
+    opacity: 0.5;
+}
+#ro:hover{
+    opacity: 1;
+}
+
+#good{
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 300px;
+}
+#good2{
+    position: absolute;
+    margin-left: 1500px;
+    
+}
+#good3{
+    position: absolute;
+    margin-left: 1086px;
+    margin-top: 948px;
+}
+#good4{
+    position: absolute;
+    margin-top: 940px;
+}
+#good5{
+    width: 421px;
+    position: absolute;
+    margin-top: 970px;
+    margin-left: 665px;
+}
+
+#good6{
+    position: absolute;
+    margin-top: 184.5px;
+}
+#good7{
+    position: absolute;
+    
+}
+#good8{
+    position: absolute;
+    margin-top: 784.3px;
+}
+#good10{
+    position: absolute;
+    margin-left: 409.3px;
+}
+#good11{
+    position: absolute;
+    margin-left: 901px;
+    width: 600px;
+}
+#text {
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 850px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: "Zombie-Noize";
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.blinking {
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+    50% { opacity:0; }
+    100% { opacity: 1; }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.fadeIn {
+    transition: opacity 1s;
+    opacity: 1 !important;
+}
+#sub3{
+    width: 1920px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+}
+#down {
+    margin-left: 850px;
+    animation: moveDown 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}

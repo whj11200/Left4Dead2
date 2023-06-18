@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#Steem{
+    width: 1920px;
+    height: 200px;
+    background-color: black;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+        font-size: 25px;
+}
+    a:hover{
+        color: rgba(116, 23, 23, 0.808);
+        
+    }
+    #icon{
+        position: absolute;
+        margin-left: 890px;
+        margin-top: -250px;
+        animation: move_down 2s infinite;
+    }
+    @keyframes move_down {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+header {
+    overflow: hidden;
+    height: 100px; background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 1s;
+    text-align: center;
+    position: absolute;
+}
+
+h1 {
+    text-align: left;
+}
+header.show {animation: headerShow 1s forwards; }
+header.hide {animation: headerHide 1s forwards; }
+
+
+button{
+position: fixed;
+}
+
+
+    
+
+header.down {
+    top: -100px;
+}
+header.up{
+    top: 0px;
+}
+
+
+
+body { margin: 0; padding: 0;}
+header.over{
+    border-left-color: rgba(100, 104, 109, 0.329);
+}
+header.over h1 a{
+    color: black;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+h3{
+color: white;
+text-align: left;
+}
+p{
+color: yellowgreen;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 70px;
+        
+
+}
+b {
+    
+    color: yellowgreen;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 35px;
+        font-size: 15px;
+        
+        
+}
+    b:hover{
+        color: rgb(227, 243, 9);
+        
+    }
+    div {
+position: absolute;
+top: 10%;
+right: 1%;
+}
+
+#fixed{
+background-image: url("../img/ddd.jpg");
+width: 1920px;
+height: 1080px;
+}
+#fixed2
+{
+    background-image: url("../img/main2.jpg");
+    width: 1920px;
+    height: 1080px;
+}
+#fixed3
+{
+    background-image: url("../img/background2.jpg");
+    width: 1920px;
+    height: 1080px;
+}
+#fixed4
+{
+    background-image: url("../img/Background56.jpg");
+    width: 1920px;
+    height: 1080px;
+}
+#JOKEY {
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 200px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#JOKEYAttack {
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 150px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#JOKEY.clicked {
+    opacity: 0;
+}
+
+#JOKEY.clicked + #JOKEYAttack {
+    opacity: 1;
+}
+
+#JOKEYAttack.clicked {
+    opacity: 1;
+}
+
+#chager
+{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 600px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#chagerAttack
+{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 600px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#chager.clicked {
+    opacity: 0;
+}
+
+#chager.clicked + #chagerAttack {
+    opacity: 1;
+}
+
+#chagerAttack.clicked {
+    opacity: 1;
+}
+#spitter
+{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1100px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#spitterAttack{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1100px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#spitter.clicked {
+    opacity: 0;
+}
+
+#spitter.clicked + #spitterAttack {
+    opacity: 1;
+}
+
+#spitterAttack.clicked {
+    opacity: 1;
+}
+
+#Bommer
+{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1500px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#Bommerattack
+{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1350px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#Bommer.clicked {
+    opacity: 0;
+}
+
+#Bommer.clicked + #Bommerattack {
+    opacity: 1;
+}
+
+#Bommerattack.clicked {
+    opacity: 1;
+}
+#Huntter
+{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 190px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#HuntterAttack
+{
+    position: absolute;
+    margin-right: 500px;
+    margin-top: 1100px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+#Huntter.clicked {
+    opacity: 0;
+}
+
+#Huntter.clicked + #HuntterAttack {
+    opacity: 1;
+}
+
+#HuntterAttack.clicked {
+    opacity: 1;
+}
+
+#Tank{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 630px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#TankAttack{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 630px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#TankAttack2{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 630px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#Tank.clicked {
+    opacity: 0;
+}
+
+#Tank.clicked + #TankAttack+#TankAttack2 {
+    opacity: 1;
+}
+
+#TankAttack+#TankAttack2.clicked {
+    opacity: 1;
+}
+
+#Smoker
+{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 1000px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#SmokerAttack{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 850px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+#Smoker.clicked {
+    opacity: 0;
+}
+
+#Smoker.clicked + #SmokerAttack {
+    opacity: 1;
+}
+
+#SmokerAttack.clicked {
+    opacity: 1;
+}
+#WITCH{
+    position: absolute;
+    margin-top: 1100px;
+    margin-left: 1400px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+#WITCHAttack{
+    position: absolute;
+    margin-top: 1050px;
+    margin-left: 1300px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}    
+#WITCH.clicked {
+    opacity: 0;
+}
+
+#WITCH.clicked + #WITCHAttack {
+    opacity: 1;
+}
+
+#WITCHAttack.clicked {
+    opacity: 1;
+}   
+#oneText {
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 140px;
+    color: rgb(143, 1, 1);
+    font-size: 80px;
+    font-family: "Zombie-Noize";
+}
+#jokeyname {
+    color: rgb(131, 123, 8);
+    position: absolute;
+    margin-left: 215px;
+    margin-top: 400px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#Chagername {
+    color: rgb(97, 30, 18);
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 400px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#Spittername {
+    color: rgb(42, 202, 114);
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: 400px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#BOOMERname {
+    color: rgb(27, 114, 56);
+    position: absolute;
+    margin-left: 1500px;
+    margin-top: 400px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#HuntterName
+{
+    color: rgb(16, 28, 134);
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 230px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#TankName {
+    color: rgb(145, 51, 51);
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 690px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#SmokerName{
+    color: rgb(107, 107, 107);
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 1100px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+#WITCHName{
+    color: rgb(250, 250, 250);
+    position: absolute;
+    margin-top: 1000px;
+    margin-left: 1500px;
+    font-size: 50px;
+    font-family: "Zombie-Noize";
+}
+
+
+#videoElement {
+    width: 1000px;
+    height: 500px;
+    transition: transform 0.2s;
+    transform: scale(1);
+    align-items: center;
+    margin-top: 600px;
+}
+
+#container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 2700px;
+    margin-right: 350px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 800px;
+}
+
+.item0 img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 1640px;
+}
+.item img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 1370px;
+}
+.item2 img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 1100px;
+}
+.item3 img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 830px;
+
+}
+.item4 img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 560px;
+}
+.item5 img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    margin-right: 290px;
+}
+
+.item6 img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    
+}
+
+
+.large-image img {
+    width: 1900px;
+    height: 800px;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+.all{
+    margin-top: 3000px;
+}
+#TwoText{
+    
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레포데소개</title>
+    <link rel="stylesheet" href="./css/Left2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <section id="main">
+        <h3 id="Play">Play</h3>
+        <h3 id="Survivor">Survivor</h3>
+        <h3 id="Achievement">Achievement</h3>
+    </section>
+    <article id="play">
+        <h2 id="How">How</h2>
+        <h2 id="playtext">Play???</h2>
+        <p id="english">Left 4 Dead is an epic poem centered on a group of zombies and four survivors fighting against the terrible mutant "Boss Zombies." L4D's survival cooperative game mode is a series of four "movies" in which survivors work together to achieve their goals against the backdrop of the zombie apocalypse, and can be played by up to four players</p>
+        <div class="slide-container">
+            <div class="slide-video">
+            <iframe src="https://www.youtube-nocookie.com/embed/VZTmhkTLdw8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/v15BgZXG4Hc?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/JMsTHe7kds8?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="left-arrow"></div>
+            <div class="right-arrow"></div>
+        </div>
+    </article>
+    <article id="sub">
+        <h2 id="Survivor2">Survivor</h2>
+    
+            <img id="bill1" src="./img/bill1.png" onclick="changeBackground()">
+            <img id="Coth" src="./img/coach1.png" onclick="changeCathBackground()">
+        <img id="fa" src="./img/framcis2.png" onclick="FABackground()">
+        <img id="nick" src="./img/Nick1.png" onclick="NickBackground()">
+        <img id="joy1" src="./img/joy1.png" onclick="JoyBackground()">
+        <img id="elish" src="./img/el1.png" onclick="EBackground()">
+        <img id="Locis" src="./img/Louis1.png"onclick="LouisBackground()">
+        <img id="ro" src="./img/ro.png" onclick="ROBackground()">
+    </article>
+    <article id="sub2">
+        <h3 id="text" class="blinking" onclick="startImageSequence(); stopBlinking();">Left 4 Dead is the original zombie game and has a global rating of 8 or higher.</h3>
+        <img id="good"  class="hidden images" src="./img/GOOD.png">
+        <img id="good2" class="hidden images" src="./img/goodright.png">
+        <img id="good3" class="hidden images" src="./img/goodbooten.png">
+        <img id="good5" class="hidden images" src="./img/godd.png">
+        <img id="good4" class="hidden images" src="./img/lol.png">
+        <img id="good6" class="hidden images" src="./img/lol2.png">
+        <img id="good8" class="hidden images" src="./img/llo.png">
+        <img id="good7" class="hidden images" src="./img/lol3.png">
+        <img id="good10" class="hidden images" src="./img/llll.png">
+        <img id="good11" class="hidden images" src="./img/lli.png">
+    </article>
+    <article id="sub3">
+        <img id="down" src="./img/down.png">
+    </article>
+    <script>
+        function scrollToElement(id) {
+          const element = document.getElementById(id);
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      
+        document.getElementById('Play').addEventListener('click', function() {
+          scrollToElement('play');
+        });
+      
+        document.getElementById('Survivor').addEventListener('click', function() {
+          scrollToElement('sub');
+        });
+      
+        document.getElementById('Achievement').addEventListener('click', function() {
+          scrollToElement('sub2');
+        });
+      </script>
+    <script src="./js/video2.js"></script>
+    <script src="./js/billbackground.js"></script>
+    <script src="./js/ff.js"></script>
+    <script src="./js/text.js"></script>
+    <script src="./js/change.js"></script>
+</body>
+</html>

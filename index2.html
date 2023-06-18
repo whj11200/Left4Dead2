@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="KOREA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Left4Dead</title>
+    
+</head>
+<link rel="stylesheet" href="./css/Left.css">
+
+<body>      
+
+    <header id="header" style="position: fixed; z-index: 2;">
+<img src="./img/log.png" style="width: 200px; height: 100px; margin-left: 100px;">
+    </header>
+
+    <img src="./img/background.png" style="position: fixed; width: 100%; height: 100%; object-fit: cover; ">
+    <section id="fixed">
+        
+        <h1 id="oneText">Zommbie Index</h1>
+        
+        <h2 id="jokeyname"> JOCKY </h2>
+        <img id="JOKEY" src="./img/JOCKY.png" alt="JOKEY" onclick="toggleImage()" />
+        <img id="JOKEYAttack" src="./img/JOCKYattack.png" alt="JOKEYAttack" onclick="toggleImage()" />
+        </div>
+        <h2 id="Chagername"> CHAGER </h2>
+        <img id="chager" src="./img/CHAGER.png" alt="chager" onclick="toggleChagerImage()" />
+        <img id="chagerAttack" src="./img/chagerattack.png" alt="JOKEYAttack" onclick="toggleChagerImage()" />
+        <h2 id="Spittername"> SPITEER </h2>
+        <img id="spitter" src="./img/spitter.png"alt ="spitter" onclick="toggleChagerImage1()"/>
+        <img id="spitterAttack" src="./img/spitterattack.png" alt ="spitterattack" onclick="toggleChagerImage1()"/>
+        <h2 id="BOOMERname"> BOOMER </h2>   
+        <img id="Bommer" src="./img/Boomer.png" alt="Bommer" onclick="toggleChagerImage2()"/>
+        <img id="Bommerattack" src="./img/Boomerattack.png"alt="Bommerattack" onclick="toggleChagerImage2()"/>
+        <h2 id="HuntterName"> HUNTER </h2>   
+        <img id="Huntter" src="./img/Huntter.png" alt="Hunter" onclick="toggleChagerImage3()"/>
+        <img id="HuntterAttack" src="./img/HuntterAttack.png" alt="HuntterAttack" onclick="toggleChagerImage3()"/>
+        <h2 id="TankName"> TANK </h2>   
+        <img id="Tank" src="./img/Tank.png" alt="Tank" onclick="toggleChagerImage4()"/>
+        <img id="TankAttack" src="./img/TankAttack.png" alt="TankAttack" onclick="toggleChagerImage4()"/>
+        <img id="TankAttack2" src="./img/TankAttack2.png" alt="TankAttack2" onclick="toggleChagerImage4()"/>
+        <h2 id="SmokerName"> SMOKER </h2>
+        <img id="Smoker" src="./img/Smoker.png" alt="Smoker" onclick="toggleChagerImage5()"/>
+        <img id="SmokerAttack" src="./img/SmokerAttack.png" alt="SmokerAttack" onclick="toggleChagerImage5()"/>
+        <h2 id="WITCHName"> WITCH </h2>
+        <img id="WITCH" src="./img/WITCH.png" alt="WITCH" onclick="toggleChagerImage6()"/>
+        <img id="WITCHAttack" src="./img/WITCHAttack.png" alt="WITCHAttack" onclick="toggleChagerImage6()"/>
+    </section>
+    <section id="fixed2">
+        <iframe id="videoElement" width="1920" height="1080" src="https://www.youtube.com/embed/LXvD4Gl3zTo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </section>
+    <section id="fixed3">
+
+    </section>
+        <section id="fixed4">
+            <h1 id="TwoText">Zombie Index</h1>
+            <div class="all">
+            <div class="large-image">
+                <img id="bigImage" src="./img/image1.jpg">
+            </div>
+            <div class="gallery">
+                <div class="item0" onclick="changeImageByIndex(0)"><img src="./img/image7.jpg"></div>
+                <div class="item" onclick="changeImageByIndex(1)"><img src="./img/image1.jpg"></div>
+                <div class="item2" onclick="changeImageByIndex(2)"><img src="./img/image2.jpg"></div>
+                <div class="item3" onclick="changeImageByIndex(3)"><img src="./img/image3.jpg"></div>
+                <div class="item4" onclick="changeImageByIndex(4)"><img src="./img/image4.jpg"></div>
+                <div class="item5" onclick="changeImageByIndex(5)"><img src="./img/image5.png.jpg"></div>
+                <div class="item6" onclick="changeImageByIndex(6)"><img src="./img/image6.jpg"></div>
+            </div>
+            </div>
+        </section>
+        <section id="Steem">
+            <img id="icon" src="./img/gosteam.png">
+        </section>
+
+<script src="./js/header.js"></script>
+<script src="./js/Jocky.js"></script>
+<script src="./js/chager.js"></script>
+<script src="./js/spitter.js"></script>
+<script src="./js/Bommer.js"></script>
+<script src="./js/Huntter.js"></script> 
+<script src="./js/Tank.js"></script>
+<script src="./js/Smoke.js"></script>
+<script src="./js/Witch.js"></script>
+<script src="./js/video.js"></script>
+<script src="js/js.js"></script>
+<script src="js/event.js"></script>
+<script src="js/gotoindex.js"></script>
+</body>
+</html>
